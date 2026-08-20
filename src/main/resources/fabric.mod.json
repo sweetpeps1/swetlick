@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "swetlick",
+	"version": "${version}",
+	"name": "SwetLick",
+	"description": "",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://github.com/sweetpeps1",
+		"sources": "https://github.com/sweetpeps1/swetlick"
+	},
+	"license": "MIT",
+	"icon": "assets/swetlick/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.minisweet.swetlick.SwetLick"
+		],
+		"fabric-datagen": [
+			"com.minisweet.swetlick.SwetLickDataGenerator"
+		],
+		"client": [
+			"com.minisweet.swetlick.SwetLickClient"
+		]
+	},
+	"mixins": [
+		"swetlick.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
